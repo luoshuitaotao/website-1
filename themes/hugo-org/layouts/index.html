@@ -1,39 +1,55 @@
 {{ $baseUrl := .Site.BaseURL }}
 {{ partial "header.html" . }}
 
-<div class="container">
+<main role="main">
 
 <div class="row">
-    <div class="col-sm-12">
-        <div class="jumbotron">
-            <h1>{{ .Site.Title }}</h1>
-            <p>{{ .Site.Params.Description }}</p>
-        </div>
-    </div>
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+		<h1>{{ .Site.Title }}</h1>
+		<p>{{ with .Site.Params.description }}{{ . }}{{ else }}You can customize this text by params "description" in your <code>config.toml</code>.{{ end }}</p>
+	</div>
 </div>
 
-<div class="row doc-main">
-    <div class="col-sm-12">
-        <main role="main">
-{{ range where .Site.Pages "Title" "快速开始"}}
-            <article>
-                <a id="title"></a>
-                <h1 class="doc-entry-title">{{ .Title }}</h1>
-                <section>
-                    {{ .Content }}
-                </section>
-            </article>
+{{ range where .Site.Pages "Title" "_index" }}
+	<div class="row doc-main">
+		<p class="doc-entry-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></p>
+		{{ .Content }}
+	</div>
 {{ end }}
-        </main>
-    </div>
+
+<div class="row doc-category">
+	<h2>Pages in Categories</h2>
+	<div>
+		<ul class="doc-list-category">
+		{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+			<li>
+				<a href="{{ $baseUrl }}/categories/{{ $name | urlize }}">
+					<span class="doc-list-category">{{ $name | title }}</span>
+				</a>
+				<ul>{{ range $taxonomy.Pages }}
+					<li><a href="{{ .RelPermalink }}">
+						<span>{{ .Title }}{{ if .Draft }} #Draft{{ end }}</span>
+						<span class="doc-entry-meta">(<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>)
+					</span>
+				</a></li>
+				{{ end }}
+				</ul>
+			</li>
+		{{ end }}
+		</ul>
+	</div>
 </div>
 
+{{ $title := .Site.Title }}
+{{ with .Site.Params.withSitePosts }}
 <hr />
 
 <div class="row doc-main text-center">
-    <div class="col-sm-12">
-        <a href="{{ $baseUrl }}/post">更多文章</a>
-    </div>
+	<a href="{{ $baseUrl }}/post">See posts for {{ $title }}</a>
 </div>
+{{ end }}
+
+</main>
 
 {{ partial "footer.html" . }}
