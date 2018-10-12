@@ -6,8 +6,7 @@ tags:
   - "Statistics"
   - "Math Department"
 
-categories:
-  - "Statistics"
+
 
 menu: main
 ---

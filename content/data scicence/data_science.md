@@ -7,8 +7,7 @@ tags:
   - "Science"
   - "Math Department"
 
-categories:
-  - "Data science"  
+
 
 menu: main
 ---

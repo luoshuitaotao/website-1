@@ -8,9 +8,6 @@ tags:
   - "Statistics"
   - "Math Department"
 
-categories:  
-  - "Operations Research"
-
 menu: main
 ---
 ### Introduction
