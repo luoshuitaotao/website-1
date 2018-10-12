@@ -7,10 +7,19 @@ tags:
   - "Math Department"
 
 categories:
-  - "Data science"
-  - "Math Department"
   - "Statistics"
+
 menu: main
 ---
+### Introduction
+The Statistics program offers courses emphasizing the practical aspect of probability and statistics. The program serves the needs of future statisticians in science, industry, business, and government. In addition, it provides the necessary background and stimulation for graduate study. It is also a crucial component of Actuarial Sciences.
 
-Hello, this is the statistics page.
+
+### Concentrations in Data Science
+
+The Department of Mathematics offers a concentration in Data Science for undergraduate students pursuing a BA or BS degree, as well as for graduate students pursuing a MS degree.
+
+
+### Concentrations in Data Science
+
+The Department of Mathematics offers a concentration in Data Science for undergraduate students pursuing a BA or BS degree, as well as for graduate students pursuing a MS degree.
