@@ -7,8 +7,6 @@ tags:
   - "Science"
   - "Math Department"
 
-
-
 menu: main
 ---
 ### What is Data Science?

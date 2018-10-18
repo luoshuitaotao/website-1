@@ -1,12 +1,13 @@
 ---
 title: "Projects"
 date: 2018-10-12T07:36:10-05:00
-
+aliases: [/projects/projects/]
 categories:
   - "Projects"
 ---
-
-Hello, this is projects page.
+***
+### Hello, this is projects page.
+***
 
 Data Science is the art and science of transforming raw data into deliverable data products in order to help businesses or government agencies make more informed decisions. The Concentration in Data Science consists of eight major components: Data Visualization, Scientific Methods, Statistical Modeling, Statistical Computing, Real-world Data Applications, Data Consulting, Data Research, and Data Technology.
 

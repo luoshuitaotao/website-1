@@ -1,13 +1,14 @@
 ---
 title: "Services"
 date: 2018-10-12T07:27:44-05:00
-
+aliases: [/service/service/]
 categories:
   - "Services"
+tags: Services  
 ---
-
-This is Services page.
-
+***
+#### This is Services page.
+***
 Data Science is the art and science of transforming raw data into deliverable data products in order to help businesses or government agencies make more informed decisions. The Concentration in Data Science consists of eight major components: Data Visualization, Scientific Methods, Statistical Modeling, Statistical Computing, Real-world Data Applications, Data Consulting, Data Research, and Data Technology.
 
 The Concentration in Data Science prepares students for a job as a Data Scientist, as well as providing a strong background for many other careers.
