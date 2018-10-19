@@ -7,7 +7,7 @@ The name "bootie" comes from Bootstrap CSS.
 __LICENSE__  
 
 The MIT License (MIT)  
-Copyright (c) 2015 coderzh    
+Copyright (c) 2018 UNO Data Sciences Group    
 
 ***
 

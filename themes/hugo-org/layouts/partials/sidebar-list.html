@@ -5,7 +5,7 @@
 		<ul class="sidebar-category-list">
 		{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
 			<li>
-				<a href="{{ $baseUrl }}/categories/{{ $name | urlize }}">
+				<a href="{{ $baseUrl }}categories/{{ $name | urlize }}">
 					<span class="doc-list-category">{{ $name | title }}</span>
 				</a>
 				<ul>{{ range $taxonomy.Pages }}
@@ -20,7 +20,7 @@
 		<h4 class="sidebar-heading">Tags</h4>
 		<div class="tag-box">
 		{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-			<a class="tag-item" href="{{ $baseUrl }}/tags/{{ $name | urlize }}">{{ $name }}</a>
+			<a class="tag-item" href="{{ $baseUrl }}tags/{{ $name | urlize }}">{{ $name }}</a>
 		{{ end }}
 		</div>
 	</div>

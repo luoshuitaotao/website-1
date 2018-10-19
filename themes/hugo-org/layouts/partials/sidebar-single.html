@@ -14,7 +14,7 @@
 		<div class="tag-box">
 		{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
         {{ range first 1 (where $taxonomy.Pages "Section" "post") }}
-		<a class="tag-item" href="{{ $baseUrl }}/tags/{{ $name | urlize }}">{{ $name }}</a>
+		<a class="tag-item" href="{{ $baseUrl }}tags/{{ $name | urlize }}">{{ $name }}</a>
         {{ end }}
 		{{ end }}
 		</div>

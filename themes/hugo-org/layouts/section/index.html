@@ -13,7 +13,7 @@
 		{{ range .Site.Sections }}
 			{{ range first 1 .Pages }}
 				{{ if and (ne .Section "") (ne .Section "index") }}
-				<li><a class="doc-entry" href="{{ $baseUrl }}/{{ .Section }}">{{ .Section | title }}/</a><ul>
+				<li><a class="doc-entry" href="{{ $baseUrl }}{{ .Section }}">{{ .Section | title }}/</a><ul>
 				{{ end }}
 			{{ end }}
 			{{ range .Pages }}
